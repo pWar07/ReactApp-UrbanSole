@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+@font-face {
+  font-family: silence;
+  src: url(../assets/fonts/Silence\ Rocken.ttf);
+}
+
+#page1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  /* background-color: blanchedalmond; */
+  color: #fff;
+}
+
+#page1 > img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#page1 h1 {
+  font-family: silence;
+  font-size: 7.9vw;
+  user-select: none;
+}
+
+#page1 h3 {
+  font-family: "Aclonica", sans-serif;
+  font-size: 1vw;
+  margin-top: -6vh;
+  margin-left: -5vw;
+  user-select: none;
+}
+
+#page1 .bottom {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 0 5vw;
+  justify-content: space-around;
+  height: 8vh;
+  width: 100%;
+  bottom: 2vh;
+  font-family: inerta;
+  /* background-color: black; */
+}
+
+#page1 .bottom .social {
+  position: relative;
+}
+
+#page1 .bottom .link a {
+  /* background-color: #000; */
+  text-decoration: none;
+  color: #fff;
+}
+
+#page1 .bottom .link a::before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.5s;
+}
+
+#page1 .bottom .link a:hover::before {
+  width: 100%;
+}
+#page1 h5 {
+  text-align: center;
+  font-size: 4vh;
+  margin: auto;
+  bottom: 4vh;
+}

@@ -1,0 +1,134 @@
+@font-face {
+  font-family: mona;
+  src: url(../assets/fonts/Mona-Sans-Black.ttf);
+}
+
+#page2 {
+  height: 110vh;
+  width: 100%;
+  padding: 3vw 3vw;
+  /* background-color: lightblue; */
+  user-select: none;
+}
+
+#page2 .title1 {
+  height: auto;
+  width: 100%;
+  /* background-color: antiquewhite; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5vh;
+}
+
+#page2 .title1 h1 {
+  position: relative;
+  color: #292929;
+  font-size: 7vh;
+  letter-spacing: 1px;
+  font-family: mona;
+}
+
+#page2 .title1 h2 {
+  position: relative;
+  font-size: 4vh;
+  color: red;
+  letter-spacing: 1px;
+  margin-left: 1vw;
+  font-family: silence;
+  /* text-align: right; */
+}
+
+#page2 .cont1 {
+  height: 90%;
+  width: 100%;
+  padding: 2vw;
+  display: flex;
+  /* background-color: #292929; */
+}
+
+#page2 .cont1 .left {
+  height: 100%;
+  width: 60%;
+  background-color: #000;
+  overflow: hidden;
+}
+
+#page2 .cont1 .left h1 {
+  position: absolute;
+  font-family: mona;
+  color: #292929;
+  margin: 2vw auto auto 2vw;
+  z-index: 1;
+}
+
+#page2 .cont1 .left img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all ease 0.3s;
+}
+
+#page2 .left:hover img {
+  scale: 1.03;
+  cursor: pointer;
+}
+
+#page2 .cont1 .right {
+  height: 100%;
+  width: 40%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1vw;
+}
+
+#page2 .cont1 .right .box1,
+.box2 {
+  height: 48%;
+  width: 100%;
+  background-color: red;
+  overflow: hidden;
+}
+
+#page2 .cont1 .right .box1 h1 {
+  position: absolute;
+  font-family: mona;
+  color: #fff;
+  margin: 2vw auto auto 2vw;
+  z-index: 2;
+}
+
+#page2 .cont1 .right .box1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all ease 0.3s;
+}
+
+#page2 .cont1 .right .box1:hover img {
+  scale: 1.03;
+  cursor: pointer;
+}
+
+#page2 .cont1 .right .box2 h1 {
+  position: absolute;
+  font-family: mona;
+  color: #292929;
+  margin: 2vw auto auto 2vw;
+  z-index: 2;
+}
+
+#page2 .cont1 .right .box2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all ease 0.3s;
+}
+
+#page2 .cont1 .right .box2:hover img {
+  scale: 1.03;
+  cursor: pointer;
+}

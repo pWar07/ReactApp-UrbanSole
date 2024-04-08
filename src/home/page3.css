@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&display=swap");
+@font-face {
+  font-family: mona;
+  src: url(../assets/fonts/Mona-Sans-Black.ttf);
+}
+@font-face {
+  font-family: silence;
+  src: url(../assets/fonts/Silence\ Rocken.ttf);
+}
+
+#page3 {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #efefef; */
+  user-select: none;
+  margin-bottom: 5vh;
+}
+
+#page3 .title2 {
+  height: auto;
+  width: 100%;
+  /* background-color: antiquewhite; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#page3 .title2 h1 {
+  color: #292929;
+  font-size: 7vh;
+  letter-spacing: 1px;
+  font-family: mona;
+}
+
+#page3 .title2 h2 {
+  font-size: 4vh;
+  color: red;
+  letter-spacing: 1px;
+  margin-left: 1vw;
+  font-family: silence;
+  /* text-align: right; */
+}
+
+#page3 .name {
+  font-size: 0.9em;
+  font-family: "Anek Latin", sans-serif;
+  font-weight: 400;
+  color: #7e7fa8;
+}
+
+#page3 .description {
+  font-size: 1.2em;
+  font-family: "Anek Latin", sans-serif;
+  font-weight: 600;
+  margin-bottom: 1vh;
+}
+
+#page3 .price {
+  font-size: 1.2em;
+  font-family: "Anek Latin", sans-serif;
+  font-weight: 600;
+  /* margin-bottom: 2vh; */
+}
+
+#page3 .slide-container {
+  max-width: 1120px;
+  width: 100%;
+  /* background-color: grey; */
+  padding: 40px 0;
+}
+
+#page3 .card {
+  border-radius: 25px;
+  background-color: #fff;
+}
+
+#page3 .slide-content {
+  margin: 0 40px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+#page3 .image-content {
+  row-gap: 5px;
+}
+
+#page3 .card-content {
+  text-align: center;
+}
+
+#page3 .button {
+  border: none;
+  padding: 8px 16px;
+  background-color: #f6f6f6;
+  border-radius: 6px;
+  margin: 14px;
+}
+
+#page3 .image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+#page3 .card-image {
+  position: relative;
+  min-height: 40vh;
+  width: 20vw;
+  margin-top: 2vh;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+#page3 img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#page3 .card-img2 {
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+#page3 .card-image:hover {
+  cursor: pointer;
+}
+
+#page3 .card-image:hover .card-img2 {
+  opacity: 1;
+  scale: 1.1;
+}
+
+#page3 .swiper-navBtn {
+  background-color: #f6f6f6;
+  padding: 25px;
+  border-radius: 50%;
+  color: #000;
+  position: absolute;
+  /* font-size: 6px; */
+}
+
+#page3 .swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none;
+}
+
+#page3 .swiper-button-prev {
+  left: 0;
+}
+
+#page3 .swiper-button-next {
+  right: 0;
+}

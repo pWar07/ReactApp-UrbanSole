@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&display=swap");
+
+#footer {
+  width: 100%;
+  height: 75vh;
+  background-color: #B9BAB9;
+  color: #292929;
+  padding: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Anek Latin", sans-serif;
+}
+
+#footer .upper {
+  height: 70%;
+  width: 100%;
+  position: relative;
+  /* background-color: #fff; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#footer .upper div p {
+  font-size: 2.4vh;
+  margin-bottom: 1.7vh;
+}
+
+#footer .upper div .foot-title {
+  font-size: 2.8vh;
+  margin-bottom: 3vh;
+  font-weight: 600;
+}
+
+#footer .upper .col1 {
+  height: 100%;
+  width: 19%;
+  padding: 2vw;
+  /* background-color: #5fbfb0; */
+  list-style-type: none;
+}
+
+#footer .upper .col2 {
+  height: 100%;
+  width: 19%;
+  padding: 2vw;
+  list-style-type: none;
+  /* background-color: antiquewhite; */
+}
+
+.foot-icons i {
+  font-size: 5vh;
+  margin-right: 3vh;
+}
+
+#footer .upper .col3 {
+  height: 100%;
+  width: 29%;
+  padding: 2vw;
+  /* background-color: beige; */
+}
+
+#footer .upper .col4 {
+  height: 100%;
+  width: 29%;
+  padding: 2vw;
+  /* background-color: cadetblue; */
+}
+
+#footer .upper .col4 .sub-cont {
+  display: flex;
+  width: 100%;
+}
+
+#footer .upper .col4 .sub-cont input {
+  padding: 2vh 3vh;
+  font-size: 2.4vh;
+}
+
+#footer .upper .col4 .sub-cont .foot-btn {
+  font-size: 2vh;
+  background-color: #292929;
+  color: #fff;
+  border: none;
+}
+
+#footer .foot-btn:hover {
+  cursor: pointer;
+}
+
+#footer .upper::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  bottom: -15px;
+  /* margin-top: 10px; */
+}
+
+#footer .lower {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #292929;
+  justify-content: space-between;
+  /* background-color: #000; */
+}
+
+#footer .lower p {
+  font-size: 16px;
+}
+
+#footer .btm {
+  position: relative;
+}
+
+#footer .btm a {
+  text-decoration: none;
+  color: #292929;
+}
+
+#footer .btm a::before {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: #fff;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  transition: all ease 0.5s;
+  /* display: ; */
+}
+
+#footer .btm a:hover::before {
+  width: 100%;
+}

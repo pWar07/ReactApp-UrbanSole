@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&display=swap");
+@font-face {
+  font-family: mona;
+  src: url(../assets/fonts/Mona-Sans-Black.ttf);
+}
+@font-face {
+  font-family: silence;
+  src: url(../assets/fonts/Silence\ Rocken.ttf);
+}
+
+#page4 {
+  min-height: 100vh;
+  width: 100%;
+  padding: 3vw 3vw;
+}
+
+#page4 .title {
+  height: auto;
+  width: 100%;
+  /* background-color: antiquewhite; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5vh;
+}
+
+#page4 .title h1,
+h2 {
+  line-height: 40px;
+}
+
+#page4 .title h1 {
+  color: #292929;
+  font-size: 7vh;
+  letter-spacing: 1px;
+  font-family: mona;
+}
+
+#page4 .title h2 {
+  font-size: 4vh;
+  color: red;
+  letter-spacing: 1px;
+  margin-left: 1vw;
+  font-family: silence;
+  /* text-align: right; */
+}
+
+#page4 .img-container {
+  min-height: 100vh;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  /* background-color: antiquewhite; */
+  margin: auto;
+  /* padding: 1vw; */
+}
+
+#page4 .img-container .line {
+  height: 100%;
+  width: 23%;
+}
+
+#page4 .img-container .img-div {
+  position: relative;
+  height: 30vh;
+  width: 100%;
+  margin: 3vh 0;
+  /* background-color: aqua; */
+  overflow: hidden;
+}
+
+#page4 .img-container .img-div .overlay {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: #00000009;
+  /* background-color: #000; */
+  align-items: center;
+  justify-content: center;
+  transition: all ease 0.5s;
+  z-index: 9;
+}
+
+#page4 .img-div .overlay > img {
+  height: 60%;
+  width: 60%;
+  object-fit: contain;
+  transition: all ease 0.2s;
+  transition-delay: 0.1s;
+  opacity: 0;
+}
+
+.overlay p {
+  font-size: 4vh;
+  color: #fff;
+  font-family: mona;
+  opacity: 0;
+  text-transform: uppercase;
+  transition: all ease 0.2s;
+  transition-delay: 0.1s;
+}
+
+#page4 .img-container .img-div:hover > img {
+  scale: 1.1;
+}
+
+#page4 .img-container .img-div:hover .overlay {
+  background-color: #0000007e;
+  cursor: pointer;
+}
+
+#page4 .img-container .img-div:hover .overlay > img {
+  opacity: 1;
+}
+
+#page4 .img-container .img-div > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all ease 0.5s;
+}
+
+.alter{
+    filter: grayscale(1) invert(1);
+}
+
+.alter1{
+    filter: brightness(0) invert(1);
+}

@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&display=swap");
+
+@font-face {
+  font-family: silence;
+  src: url(../assets/fonts/Silence\ Rocken.ttf);
+}
+
+@font-face {
+  font-family: mona;
+  src: url(../assets/fonts/Mona-Sans-Black.ttf);
+}
+
+#about{
+  height: 120vh;
+  width: 100%;
+  padding: 16vh 5vw 5vh;
+}
+
+#about .cont{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  /* background-color: aliceblue; */
+  display: flex;
+}
+
+#about .img-cont{
+  height: 100%;
+  width: 55%;
+  /* background-color: beige; */
+}
+
+#about .img-cont>img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#about .cont .title{
+  width: 20vw;
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  text-align: center;
+  font-family: mona;
+  font-size: 8vh;
+  /* background-color: antiquewhite; */
+}
+
+#about .cont .text-cont{
+  height: 100%;
+  width: 45%;
+  padding: 30vh 10vw 0vh;
+  font-family: "Anek latin";
+  font-size: 18px;
+  line-height: 26px;
+}
+
+#about .cont .text-cont .text1{
+  margin-bottom: 5vh;
+}
+
+#about .cont .text-cont span{
+  font-weight: 800;
+}
