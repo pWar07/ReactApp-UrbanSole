@@ -1,8 +1,13 @@
 import "./nav.css";
 import logo from "../assets/media/img1.png";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function NavBar() {
+  const [searchShow,setSearchShow]=useState(false);
+  const searchBar = ()=>{
+    setSearchShow(!searchShow)
+  }
   return (
     <div id="header">
       <div id="nav">
@@ -31,8 +36,8 @@ function NavBar() {
             </p>
           </div>
           <div class="right">
-            <input id="search" type="text" placeholder="Search" />
-            <p>Search</p>
+            <input id="search" type="text" placeholder="Search" className={`${searchShow ? "show" : "notVisible"}`} />
+            <p onClick={searchBar}>Search</p>
             <p>
               <Link className="link login-link" to="/join-us">
                 Log In

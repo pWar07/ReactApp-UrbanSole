@@ -105,7 +105,7 @@
 }
 
 #nav .cont .right #search {
-  display: none;
+  /* display: none; */
   border-radius: 50px;
   border: none;
   font-size: 2vh;
@@ -127,4 +127,12 @@
 
 .login-link{
   margin-left: 2vw;
+}
+
+.show{
+  display: inline;
+}
+
+.notVisible{
+  display: none;
 }
