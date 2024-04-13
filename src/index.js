@@ -5,8 +5,12 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Log from "./Pages/login";
-import Contact from "./components/contact";
 import About from "./Pages/about";
+import Product from "./products/prodPage";
+import SingleProd from "./products/productDetail";
+import Puma from "./extra/puma";
+import Adidas from "./extra/adidas";
+import Nike from "./extra/nike";
 
 const router = createBrowserRouter([
   {
@@ -18,8 +22,29 @@ const router = createBrowserRouter([
     element: <About />,
   },
   {
+    path: "/product",
+    element: <Product />,
+  },
+  {
+    path: "/product/:id",
+    element: <SingleProd />,
+  },
+  {
     path: "/join-us",
     element: <Log />,
+  },
+  // EXTRA
+  {
+    path: "/pumaxbmw",
+    element: <Puma />,
+  },
+  {
+    path: "/adidas",
+    element: <Adidas />,
+  },
+  {
+    path: "/nike",
+    element: <Nike/>,
   },
 ]);
 
