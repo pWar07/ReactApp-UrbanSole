@@ -14,7 +14,7 @@ import { Autoplay, Navigation } from "swiper/modules";
 
 export default function Review() {
   return (
-    <>
+    <div className="testimonial">
       <div class="title">
         <h1>Genuine</h1>
         <h2>Reviews</h2>
@@ -91,6 +91,6 @@ export default function Review() {
           <i class="ri-arrow-right-s-line"></i>
         </div> */}
       </Swiper>
-    </>
+    </div>
   );
 }

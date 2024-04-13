@@ -2,6 +2,7 @@ import "./page2.css";
 import pumabmw from "../assets/media/pumaxbmw.jpg";
 import airmax from "../assets/media/nike-airmax.png";
 import yeezy from "../assets/media/adidas-yeezy.jpg";
+import { Link } from "react-router-dom";
 
 function Pg2() {
   return (
@@ -11,25 +12,25 @@ function Pg2() {
         <h2>Drops</h2>
       </div>
       <div class="cont1">
-        <div class="left">
+        <Link to="/pumaxbmw" class="left">
           <h1>PUMA X BMW M MOTORSPORT</h1>
           <img src={pumabmw} alt="" />
-        </div>
+        </Link>
         <div class="right">
-          <div class="box1">
+          <Link to="/nike" class="box1">
             <h1>
               Nike Air <br />
               Max DN
             </h1>
             <img src={airmax} alt="" />
-          </div>
-          <div class="box2">
+          </Link>
+          <Link class="box2" to="/adidas">
             <h1>
               Adidas <br />
               YEEZY
             </h1>
             <img src={yeezy} alt="" />
-          </div>
+          </Link>
         </div>
       </div>
     </div>
