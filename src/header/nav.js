@@ -20,7 +20,7 @@ function NavBar() {
               </Link>
             </p>
             <p>
-              <Link className="link" to="/category">
+              <Link className="link" to="/product">
                 Categories
               </Link>
             </p>
@@ -36,8 +36,8 @@ function NavBar() {
             </p>
           </div>
           <div class="right">
-            <input id="search" type="text" placeholder="Search" className={`${searchShow ? "show" : "notVisible"}`} />
-            <p onClick={searchBar}>Search</p>
+            {/* <input id="search" type="text" placeholder="Search" className={`${searchShow ? "show" : "notVisible"}`} />
+            <p onClick={searchBar}>Search</p> */}
             <p>
               <Link className="link login-link" to="/join-us">
                 Log In

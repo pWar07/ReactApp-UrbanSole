@@ -1,4 +1,3 @@
-import Slider from "../components/swiper";
 import Contact from "../components/contact";
 import Pg1 from "../home/page1";
 import Pg2 from "../home/page2";
@@ -13,7 +12,7 @@ function Main() {
       <Pg2 />
       <Pg3 />
       {/* <Pg4 /> */}
-      <Review/>
+      <Review />
       <Contact />
     </>
   );

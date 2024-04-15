@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#prodPage{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  padding: 3vw;
+  justify-content: space-around;
+}
+
+#prodPage .filterMenu{
+  height: 70vh;
+  width: 25%;
+  background-color: #f6f6f6;
+  margin-top: 10vh;
+  font-family: "Anek Latin", sans-serif;
+  font-size: 16px;
+  border-radius: 10px;
+  /* border: 1px solid #2929295a; */
+}
+
+#prodPage .filterMenu{
+  padding: 3vh 0 0 3vh;
+}
+
+#prodPage .filterMenu div{
+  margin-top: 2vh;
+  margin-left: 0.5vw;
+  line-height: 22px;
+}
+
+#prodPage .filterMenu div .title1{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 1vh;
+}
+
+#prodPage .filterMenu input{
+  width: 80%;
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid #00000077;
+  margin-bottom: 2vh;
+}
+
+#prodPage .filterMenu input:focus{
+  outline: none;
+}
+
+#prodPage .prodWrapper{
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 7vh;
+}
+
+#prodPage .brand {
+  font-size: 0.9em;
+  font-family: "Anek Latin", sans-serif;
+  font-weight: 400;
+  color: #7e7fa8;
+}
+
+#prodPage .title {
+  font-size: 1.2em;
+  font-family: "Anek Latin", sans-serif;
+  font-weight: 600;
+  margin-bottom: 1vh;
+  color: #000;
+}
+
+#prodPage .price {
+  font-size: 1.2em;
+  font-family: "Anek Latin", sans-serif;
+  font-weight: 600;
+  color: #000;
+  /* margin-bottom: 2vh; */
+}
+
+#prodPage .card {
+  height: 100%;
+  border-radius: 25px;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+#prodPage .image-content {
+  row-gap: 5px;
+}
+
+#prodPage .card-content {
+  text-align: center;
+}
+
+#prodPage .button {
+  border: none;
+  padding: 8px 16px;
+  background-color: #f6f6f6;
+  border-radius: 6px;
+  margin: 14px;
+}
+
+#prodPage .image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+#prodPage .card-image {
+  position: relative;
+  min-height: 320px;
+  min-width: 300px;
+  margin-top: 2vh;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+#prodPage img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#prodPage .card-img2 {
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+#prodPage .card-image:hover {
+  cursor: pointer;
+}
+
+#prodPage .card-image:hover .card-img2 {
+  opacity: 1;
+  scale: 1.1;
+}
