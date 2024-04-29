@@ -112,6 +112,14 @@ body {
   /* text-align: right; */
 }
 
+#prodSlider .card {
+  text-decoration: none;
+  min-height: 100%;
+  border-radius: 25px;
+  background-color: #fff;
+  color: #000;
+}
+
 #prodSlider .name {
   font-size: 0.9em;
   font-family: "Anek Latin", sans-serif;
@@ -140,11 +148,6 @@ body {
   padding: 40px 0;
 }
 
-#prodSlider .card {
-  min-height: 100%;
-  border-radius: 25px;
-  background-color: #fff;
-}
 
 #prodSlider .slide-content {
   margin: 0 40px;

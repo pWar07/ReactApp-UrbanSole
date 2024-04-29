@@ -1,9 +1,5 @@
 import "./productDetail.css";
-import prod11 from "../assets/media/products/prod11.jpg";
-import prod12 from "../assets/media/products/prod12.jpg";
-import prod13 from "../assets/media/products/prod13.jpg";
-import prod14 from "../assets/media/products/prod14.jpg";
-import { Link, useParams } from "react-router-dom";
+import { Link, ScrollRestoration, useParams } from "react-router-dom";
 import { items } from "../components/data";
 import { useEffect, useState } from "react";
 
@@ -19,7 +15,7 @@ const SingleProd = () => {
 
     const relatedProds = items.filter((p)=>p.category === product.category)
     setRelatedProds(relatedProds)
-    // console.log("RelatedProduct = ",relatedProds)
+    console.log("RelatedProduct = ",relatedProds)
     setRelatedProds(relatedProds)
   }, [id, product.category]);
 
@@ -65,6 +61,7 @@ const SingleProd = () => {
           </div>
         </div>
       </div>
+      <ScrollRestoration/>
     </div>
   );
 };

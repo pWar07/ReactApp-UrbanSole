@@ -11,6 +11,7 @@ import SingleProd from "./products/productDetail";
 import Puma from "./extra/puma";
 import Adidas from "./extra/adidas";
 import Nike from "./extra/nike";
+import SwiperProd from "./products/swiperProdPage";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/product",
     element: <Product />,
+  },
+  {
+    path: "/popular/:id",
+    element: <SwiperProd />,
   },
   {
     path: "/product/:id",
@@ -44,7 +49,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/nike",
-    element: <Nike/>,
+    element: <Nike />,
   },
 ]);
 

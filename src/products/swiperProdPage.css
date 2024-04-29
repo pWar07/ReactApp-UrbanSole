@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&display=swap");
+
+@font-face {
+  font-family: silence;
+  src: url(../assets/fonts/Silence\ Rocken.ttf);
+}
+
+@font-face {
+  font-family: mona;
+  src: url(../assets/fonts/Mona-Sans-Black.ttf);
+}
+
+@font-face {
+  font-family: inerta;
+  src: url(../assets/fonts/Inerta-Regular.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  /* font-family: mona; */
+}
+
+#main1 {
+  height: 120vh;
+  width: 100%;
+}
+
+#main1 #header1 {
+  height: 10vh;
+  width: 100%;
+  padding: 2vw;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#main1 .back-icon {
+  height: 6vh;
+  width: 6vh;
+  border-radius: 50%;
+  display: flex;
+  /* background-color: #9afffd; */
+  border: 0.5px solid #00000030;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #000;
+}
+
+#main1 .page1 {
+  height: 100vh;
+  width: 100%;
+  padding: 0 3vw;
+  display: flex;
+  /* background-color: bisque; */
+}
+
+#main1 #img-cont {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  /* background-color: aquamarine; */
+}
+
+#main1 .left-cont {
+  height: 100%;
+  width: 15%;
+  padding: 3vw 1vw;
+  /* background-color: brown; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+#main1 .small {
+  height: 9vh;
+  width: 9vh;
+  /* background-color: blueviolet; */
+  border-radius: 5px;
+  margin-bottom: 1.5vh;
+  overflow: hidden;
+}
+
+#main1 .small img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#main1 .right-cont {
+  height: 100%;
+  width: 85%;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: black; */
+}
+
+#main1 .hero-img {
+  height: 85%;
+  width: 85%;
+  border-radius: 10px;
+  /* background-color: blue; */
+  overflow: hidden;
+}
+
+#main1 .hero-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#main1 .nav-btn {
+  height: 10%;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  padding: 0 4vw;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#main1 .left-nav {
+  height: 7vh;
+  width: 7vh;
+  background-color: burlywood;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1vw;
+}
+
+#main1 .right-nav {
+  height: 7vh;
+  width: 7vh;
+  background-color: burlywood;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main1 #details {
+  height: 150%;
+  width: 40%;
+  padding: 2vw;
+  font-family: "Anek Latin", sans-serif;
+  /* background-color: burlywood; */
+}
+
+#main1 #details h4 {
+  font-family: "Anek Latin", sans-serif;
+  font-weight: 400;
+  margin-bottom: 2vh;
+  color: #7e7fa8;
+}
+
+#main1 #details h1 {
+  font-family: "Anek Latin", sans-serif;
+  font-weight: 600;
+  font-size: 5vh;
+  margin-bottom: 2vh;
+}
+
+#main1 #details h2 {
+  font-family: inerta;
+  font-weight: 600;
+  margin-bottom: 2vh;
+  font-size: 2.5vh;
+}
+
+#main1 #details .price {
+  margin-bottom: 5vh;
+  font-size: 3vh;
+}
+
+#main1 #details .sizes {
+  margin-bottom: 5vh;
+}
+
+#main1 #details .sizes input {
+  padding: 2vh 4vh;
+  font-size: 2vh;
+  background-color: #fff;
+  border: 1px solid #000;
+  margin-left: 5px;
+
+}
+
+#main1 #details .colors {
+  height: 13vh;
+  width: 100%;
+  /* background-color: #000; */
+  margin-bottom: 5vh;
+}
+
+#main1 #details .colors h3 {
+  margin-bottom: 2vh;
+}
+
+#main1 #details .colors .catalogue {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#main1 #details .colors .catalogue div {
+  height: 10vh;
+  width: 10vh;
+  margin-right: 1vw;
+  border-radius: 5px;
+  /* background-color: #000; */
+  overflow: hidden;
+}
+
+#main1 #details .colors .catalogue div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#main1 #details .about h3 {
+  font-weight: 600;
+  font-size: 3vh;
+  margin-bottom: 2vh;
+}
+
+#main1 #details .about p {
+  font-size: 2.8vh;
+  font-weight: 400;
+  line-height: 3.7vh;
+  margin-bottom: 2vh;
+  color: #000000ad;
+}

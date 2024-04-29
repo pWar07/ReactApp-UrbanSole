@@ -21,7 +21,7 @@ function NavBar() {
             </p>
             <p>
               <Link className="link" to="/product">
-                Categories
+                Products
               </Link>
             </p>
             <p>

@@ -2,7 +2,7 @@ import nike1 from "../assets/media/products/prod41.png";
 import nike2 from "../assets/media/products/prod42.jpeg";
 import nike3 from "../assets/media/products/prod43.png";
 import nike4 from "../assets/media/products/prod44.jpeg";
-import { Link } from "react-router-dom";
+import { Link,ScrollRestoration } from "react-router-dom";
 
 const Nike = () => {
   return (
@@ -43,10 +43,17 @@ const Nike = () => {
           </div>
           <div class="about">
             <h3>Product Details</h3>
-            <p>Say hello to the next generation of Air technology. The Air Max Dn features our Dynamic Air unit system of dual-pressure tubes, creating a reactive sensation with every step. This results in a futuristic design that's comfortable enough to wear from day to night. Go ahead—Feel The Unreal.</p>
+            <p>
+              Say hello to the next generation of Air technology. The Air Max Dn
+              features our Dynamic Air unit system of dual-pressure tubes,
+              creating a reactive sensation with every step. This results in a
+              futuristic design that's comfortable enough to wear from day to
+              night. Go ahead—Feel The Unreal.
+            </p>
           </div>
         </div>
       </div>
+      <ScrollRestoration />
     </div>
   );
 };

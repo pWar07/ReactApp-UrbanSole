@@ -2,7 +2,7 @@ import "./page2.css";
 import pumabmw from "../assets/media/pumaxbmw.jpg";
 import airmax from "../assets/media/nike-airmax.png";
 import yeezy from "../assets/media/adidas-yeezy.jpg";
-import { Link } from "react-router-dom";
+import { Link, ScrollRestoration } from "react-router-dom";
 
 function Pg2() {
   return (
@@ -33,6 +33,7 @@ function Pg2() {
           </Link>
         </div>
       </div>
+      {/* <ScrollRestoration/> */}
     </div>
   );
 }

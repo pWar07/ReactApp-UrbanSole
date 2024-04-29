@@ -1,7 +1,7 @@
 import { items } from "../components/data";
 import React, { useState } from "react";
 import "./prodPage.css";
-import { Link } from "react-router-dom";
+import { Link,ScrollRestoration } from "react-router-dom";
 import NavBar from "../header/nav";
 import Foot from "../footer/footer";
 
@@ -12,17 +12,17 @@ const Product = () => {
     product.category.toLowerCase().includes(filter.toLowerCase())
   );
 
-  // const filteredProducts = products.filter((product) =>
-  //   product.price.toString().includes(filter.toString())
-  // );
-
-  
   return (
     <>
       <NavBar />
       <div id="prodPage">
         <div className="filterMenu">
-          <input type="text" placeholder="Search" value={filter} onChange={(e) => setFilter(e.target.value)} />
+          <input
+            type="text"
+            placeholder="Search"
+            value={filter}
+            onChange={(e) => setFilter(e.target.value)}
+          />
           <div className="byBrand">
             <p className="title1">Search by Brand</p>
             <p>Nike</p>
@@ -64,6 +64,7 @@ const Product = () => {
         </div>
       </div>
       <Foot />
+      <ScrollRestoration />
     </>
   );
 };

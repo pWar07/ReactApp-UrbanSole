@@ -1,11 +1,18 @@
-import React from "react";
-import puma1 from "../assets/media/products/pumaxbmw1.avif"
-import puma2 from "../assets/media/products/pumaxbmw2.avif"
-import puma3 from "../assets/media/products/pumaxbmw3.avif"
-import puma4 from "../assets/media/products/pumaxbmw4.avif"
-import { Link, ScrollRestoration } from "react-router-dom";
+import "./swiperProdPage.css";
+import { Link, ScrollRestoration, useParams } from "react-router-dom";
+import { items1 } from "../components/data1";
+import { useEffect, useState } from "react";
 
-const Puma = () => {
+const SwiperProd = () => {
+  const { id } = useParams();
+
+  const [product, setProduct] = useState({});
+
+  useEffect(() => {
+    const filterProduct = items1.filter((product) => product.id == id);
+    setProduct(filterProduct[0]);
+  }, [id]);
+
   return (
     <div id="main1">
       <div id="header1">
@@ -17,34 +24,34 @@ const Puma = () => {
         <div id="img-cont">
           <div class="left-cont">
             <div class="small">
-              <img src={puma1} alt="" />
+              <img src={product.img1} alt="" />
             </div>
             <div class="small">
-              <img src={puma2} alt="" />
+              <img src={product.img2} alt="" />
             </div>
             <div class="small">
-              <img src={puma3} alt="" />
+              <img src={product.img3} alt="" />
             </div>
             <div class="small">
-              <img src={puma4} alt="" />
+              <img src={product.img4} alt="" />
             </div>
           </div>
           <div class="right-cont">
             <div class="hero-img">
-              <img src={puma1} alt="" />
+              <img src={product.img1} alt="" />
             </div>
           </div>
         </div>
         <div id="details">
-          <h4>Puma</h4>
-          <h1>BMW M Motorsport RS-X Unisex Sneakers</h1>
-          <h2 class="price">₹8,999</h2>
+          <h4>{product.brandName}</h4>
+          <h1>{product.title}</h1>
+          <h2 class="price">{product.price}</h2>
           <div class="sizes">
             <input type="button" value="Add to cart" />
           </div>
           <div class="about">
             <h3>Product Details</h3>
-            <p>The BMW M Motorsport version of the RS-X brings a splash of motorsport DNA to the PUMA sneaker that stands out for its bulky</p>
+            <p>{product.description}</p>
           </div>
         </div>
       </div>
@@ -53,4 +60,4 @@ const Puma = () => {
   );
 };
 
-export default Puma;
+export default SwiperProd;
