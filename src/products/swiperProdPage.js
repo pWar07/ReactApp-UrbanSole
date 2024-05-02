@@ -7,11 +7,14 @@ const SwiperProd = () => {
   const { id } = useParams();
 
   const [product, setProduct] = useState({});
-
+  const [mainImg, setMainImg] = useState("")
+  
   useEffect(() => {
     const filterProduct = items1.filter((product) => product.id == id);
     setProduct(filterProduct[0]);
+    setMainImg(filterProduct[0]?.img1 || '');
   }, [id]);
+
 
   return (
     <div id="main1">
@@ -24,21 +27,21 @@ const SwiperProd = () => {
         <div id="img-cont">
           <div class="left-cont">
             <div class="small">
-              <img src={product.img1} alt="" />
+              <img src={product.img1} onMouseEnter={() => setMainImg(product.img1)} alt="" />
             </div>
             <div class="small">
-              <img src={product.img2} alt="" />
+              <img src={product.img2} onMouseEnter={() => setMainImg(product.img2)} alt="" />
             </div>
             <div class="small">
-              <img src={product.img3} alt="" />
+              <img src={product.img3} onMouseEnter={() => setMainImg(product.img3)} alt="" />
             </div>
             <div class="small">
-              <img src={product.img4} alt="" />
+              <img src={product.img4} onMouseEnter={() => setMainImg(product.img4)} alt="" />
             </div>
           </div>
           <div class="right-cont">
             <div class="hero-img">
-              <img src={product.img1} alt="" />
+              <img src={mainImg} alt="" />
             </div>
           </div>
         </div>

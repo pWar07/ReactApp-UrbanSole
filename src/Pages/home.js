@@ -1,4 +1,4 @@
-import Contact from "../components/contact";
+import Contact from "../components/contact"
 import Pg1 from "../home/page1";
 import Pg2 from "../home/page2";
 import Pg3 from "../home/page3";

@@ -8,10 +8,12 @@ const SingleProd = () => {
 
   const [product, setProduct] = useState({});
   const [relatedProds, setRelatedProds] = useState([])
+  const [mainImg, setMainImg] = useState("")
 
   useEffect(() => {
     const filterProduct = items.filter((product) => product.id == id);
     setProduct(filterProduct[0]);
+    setMainImg(filterProduct[0]?.img1 || '');
 
     const relatedProds = items.filter((p)=>p.category === product.category)
     setRelatedProds(relatedProds)
@@ -30,21 +32,21 @@ const SingleProd = () => {
         <div id="img-cont">
           <div class="left-cont">
             <div class="small">
-              <img src={product.img1} alt="" />
+              <img src={product.img1} onMouseEnter={() => setMainImg(product.img1)} alt="" />
             </div>
             <div class="small">
-              <img src={product.img2} alt="" />
+              <img src={product.img2} onMouseEnter={() => setMainImg(product.img2)} alt="" />
             </div>
             <div class="small">
-              <img src={product.img3} alt="" />
+              <img src={product.img3} onMouseEnter={() => setMainImg(product.img3)} alt="" />
             </div>
             <div class="small">
-              <img src={product.img4} alt="" />
+              <img src={product.img4} onMouseEnter={() => setMainImg(product.img4)} alt="" />
             </div>
           </div>
           <div class="right-cont">
             <div class="hero-img">
-              <img src={product.img1} alt="" />
+              <img src={mainImg} alt="" />
             </div>
           </div>
         </div>

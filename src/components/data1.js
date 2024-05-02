@@ -47,7 +47,7 @@ export const items1 = [
     img4: p14,
     description:
       "The Chuck 70 mixes the best details from the ’70s-era Chuck with impeccable craftsmanship and premium materials. An elevated style icon, it features more cushioning to keep you looking—and feeling—good all day. The Chuck 70 holds its own on fashion week runways and city streets, making it the go-to sneaker for those looking to enhance and express their style.",
-    price: "₹5,499.00",
+    price: "5,499.00",
   },
   {
     id: 2,
@@ -60,7 +60,7 @@ export const items1 = [
     img4: p24,
     description:
       "Inspired by the iconic Crazy 1, these adidas shoes blend sports heritage with contemporary street style. The moulded polyurethane upper with mesh shroud and rubber outsole are designed for all-day comfort, style and durability. Step into the new age of adidas lifestyle footwear and explore the city in retro-futuristic kicks made to turn heads.",
-    price: "₹15,999.00",
+    price: "15,999.00",
   },
   {
     id: 3,
@@ -72,7 +72,7 @@ export const items1 = [
     img3: p33,
     img4: p34,
     description: "MJ wore 'em when he claimed his first championship and you'll be wearing 'em for—well, whatever you want. Laden with dynamic design lines and those iconic lace locks, these sneakers bring throwback style to any 'fit. Lace up, and let your kicks do the talking. Genuine and synthetic leather and textile materials provide lightweight structure and support.Nike Air unit in the heel and encapsulated Air unit in the forefoot provide cushioning.",
-    price: "₹14,716.00",
+    price: "14,716.00",
   },
   {
     id: 4,
@@ -84,7 +84,7 @@ export const items1 = [
     img3: p43,
     img4: p44,
     description: "(Flight) suited and booted. This bold, rugged sneaker boot is key for your rotation. Luxe full-grain leather combines with a chunky platform sole to pump up your personal style. Exaggerated outsole lugs and Nike Air cushioning support your steps. And don't sleep on the AJ1 DNA: a diamond inset on the heel displays Jumpman insignia, grounding your look in hoops heritage.",
-    price: "₹15,295.00",
+    price: "15,295.00",
   },
   {
     id: 5,
@@ -96,7 +96,7 @@ export const items1 = [
     img3: p53,
     img4: p54,
     description: "Celebrating its 30th anniversary—and the first release with original design specs since the '93 debut—the AJ9 is back. We kept all the iconic details, like the minimalist leather upper, 'one-pull' lacing system and jagged midsole. Step in and throw it back.Full-grain leather in the upper offers durability and structure.Nike Air technology absorbs impact for cushioning with every step.Rubber in the outsole gives you everyday traction.",
-    price: "₹19,295.00",
+    price: "19,295.00",
   },
   {
     id: 6,
@@ -108,7 +108,7 @@ export const items1 = [
     img3: p63,
     img4: p64,
     description: "The original 550 debuted in 1989 and made its mark on basketball courts from coast to coast. After its initial run, the 550 was filed away in the archives, before being reintroduced in limited-edition releases in late 2020, and returned to the full-time lineup in 2021, quickly becoming a global fashion favorite. The 550’s low top, streamlined silhouette offers a clean take on the heavy-duty designs of the late ‘80s, while the dependable leather upper construction is a classic look in any era.",
-    price: "₹12,999.00",
+    price: "12,999.00",
   },
   {
     id: 7,
@@ -120,7 +120,7 @@ export const items1 = [
     img3: p73,
     img4: p74,
     description: "Lace up and feel the legacy. These AM90s will keep up with you on all your adventures thanks to a mix of GORE-TEX and mesh materials. Worn by presidents, revolutionized through collabs and celebrated through rare colorways, the Waffle sole, striking visuals and Nike Air cushioning keep it alive and well. Originally designed for performance running, visible Nike Air cushioning puts the history of comfort beneath your feet.",
-    price: "₹14,995.00",
+    price: "14,995.00",
   },
   {
     id: 8,
@@ -132,7 +132,7 @@ export const items1 = [
     img3: p83,
     img4: p84,
     description: "Basketball heritage meets elevated comfort on the JAPAN S ST sneaker. Based on one of our throwback offerings from 1981, this silhouette evolves an iconic design with amplified cushioning properties. This shoe's upper features a synthetic leather construction and several accent details that help create unique color blocking combinations.",
-    price: "₹6,999.00",
+    price: "6,999.00",
   },
   {
     id: 9,
@@ -144,6 +144,6 @@ export const items1 = [
     img3: p93,
     img4: p94,
     description: "Come with us to Smurf Village! PUMA x THE SMURFS takes you right into the world of the little blue creatures. This RS-X brings the 2018 silhouette's signature energy to the collab with a colourful new design. It's contemporary streetwear that even Gargamel can't compete with.",
-    price: "₹11,999.00",
+    price: "11,999.00",
   },
 ];
