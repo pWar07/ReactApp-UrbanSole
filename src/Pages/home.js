@@ -10,9 +10,9 @@ function Main() {
     <>
       <Pg1 />
       <Pg2 />
+      <Review />
       <Pg3 />
       {/* <Pg4 /> */}
-      <Review />
       <Contact />
     </>
   );

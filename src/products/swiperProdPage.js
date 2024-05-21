@@ -1,6 +1,6 @@
 import "./swiperProdPage.css";
 import { Link, ScrollRestoration, useParams } from "react-router-dom";
-import { items1 } from "../components/data1";
+import { items1 } from "../components/data";
 import { useEffect, useState } from "react";
 
 const SwiperProd = () => {

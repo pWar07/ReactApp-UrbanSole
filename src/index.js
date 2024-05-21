@@ -12,6 +12,8 @@ import Puma from "./extra/puma";
 import Adidas from "./extra/adidas";
 import Nike from "./extra/nike";
 import SwiperProd from "./products/swiperProdPage";
+import ContactUs from "./Pages/contactUs";
+import Release from "./Pages/release";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +35,14 @@ const router = createBrowserRouter([
   {
     path: "/product/:id",
     element: <SingleProd />,
+  },
+  {
+    path: "/contact",
+    element: <ContactUs/>,
+  },
+  {
+    path: "/release",
+    element: <Release/>,
   },
   {
     path: "/join-us",

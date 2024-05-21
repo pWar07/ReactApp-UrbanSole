@@ -7,6 +7,7 @@ import mobikwik from "../assets/media/payments/mobikwik.svg";
 import paytm from "../assets/media/payments/paytm.svg";
 import rupay from "../assets/media/payments/rupay.svg";
 import visa from "../assets/media/payments/visa.svg";
+import { Link } from "react-router-dom";
 
 function Foot() {
   return (
@@ -14,8 +15,8 @@ function Foot() {
       <div class="upper">
         <div class="col1">
           <p class="foot-title">INFO</p>
-          <p>Contact Us</p>
-          <p>Release</p>
+          <Link to="/contact"><p>Contact Us</p></Link>
+          <Link to="/release"><p>Release</p></Link>
           <p>Stores</p>
           <p>Brands</p>
         </div>

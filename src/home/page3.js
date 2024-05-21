@@ -1,4 +1,4 @@
-import { items1 } from "../components/data1";
+import { items1 } from "../components/data";
 
 import React, { useRef, useState } from "react";
 // Import Swiper React components
