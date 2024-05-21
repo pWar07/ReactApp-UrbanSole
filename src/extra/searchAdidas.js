@@ -1,14 +1,14 @@
-import { items } from "../components/data";
+import { adidas } from "../components/data";
 import React, { useState } from "react";
-import "./prodPage.css";
-import { Link,ScrollRestoration } from "react-router-dom";
+import "../products/prodPage.css";
+import { Link, ScrollRestoration } from "react-router-dom";
 import NavBar from "../header/nav";
 import Foot from "../footer/footer";
 
-const Product = () => {
+const SAdidas = () => {
   const [filter, setFilter] = useState("");
 
-  const filteredProducts = items.filter((product) =>
+  const filteredProducts = adidas.filter((product) =>
     product.category.toLowerCase().includes(filter.toLowerCase())
   );
 
@@ -25,21 +25,37 @@ const Product = () => {
           /> */}
           <div className="byBrand">
             <p className="title1">Search by Brand</p>
-            <Link className="prodLink" to="/product/nike"><p>Nike</p></Link>
-            <Link className="prodLink" to="/product/adidas"><p>Adidas</p></Link>
-            <Link className="prodLink" to="/product/woodland"><p>Woodland</p></Link>
-            <Link className="prodLink" to="/product/puma"><p>Puma</p></Link>
+            <Link className="prodLink" to="/product/nike">
+              <p>Nike</p>
+            </Link>
+            <Link className="prodLink" to="/product/adidas">
+              <p>Adidas</p>
+            </Link>
+            <Link className="prodLink" to="/product/woodland">
+              <p>Woodland</p>
+            </Link>
+            <Link className="prodLink" to="/product/puma">
+              <p>Puma</p>
+            </Link>
           </div>
           <div className="byType">
             <p className="title1">Search Type</p>
-            <Link className="prodLink" to="/product/sneaker"><p>Sneaker</p></Link>
-            <Link className="prodLink" to="/product/formal"><p>Formal</p></Link>
-            <Link className="prodLink" to="/product/boot"><p>Boots</p></Link>
-            <Link className="prodLink" to="/product/canvas"><p>Canvas</p></Link>
+            <Link className="prodLink" to="/product/sneaker">
+              <p>Sneaker</p>
+            </Link>
+            <Link className="prodLink" to="/product/formal">
+              <p>Formal</p>
+            </Link>
+            <Link className="prodLink" to="/product/boot">
+              <p>Boots</p>
+            </Link>
+            <Link className="prodLink" to="/product/canvas">
+              <p>Canvas</p>
+            </Link>
           </div>
         </div>
         <div className="prodWrapper">
-          {items.map((product, index) => {
+          {adidas.map((product, index) => {
             return (
               <>
                 <div key={product.id}>
@@ -69,4 +85,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default SAdidas;

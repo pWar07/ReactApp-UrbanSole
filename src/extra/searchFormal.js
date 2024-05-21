@@ -1,14 +1,14 @@
-import { items } from "../components/data";
+import { formal } from "../components/data";
 import React, { useState } from "react";
-import "./prodPage.css";
+import "../products/prodPage.css";
 import { Link,ScrollRestoration } from "react-router-dom";
 import NavBar from "../header/nav";
 import Foot from "../footer/footer";
 
-const Product = () => {
+const SFormal = () => {
   const [filter, setFilter] = useState("");
 
-  const filteredProducts = items.filter((product) =>
+  const filteredProducts = formal.filter((product) =>
     product.category.toLowerCase().includes(filter.toLowerCase())
   );
 
@@ -39,7 +39,7 @@ const Product = () => {
           </div>
         </div>
         <div className="prodWrapper">
-          {items.map((product, index) => {
+          {formal.map((product, index) => {
             return (
               <>
                 <div key={product.id}>
@@ -69,4 +69,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default SFormal;

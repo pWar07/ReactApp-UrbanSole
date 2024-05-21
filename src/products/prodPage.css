@@ -17,6 +17,11 @@ body {
   justify-content: space-around;
 }
 
+#prodPage .prodLink{
+  text-decoration: none;
+  color: #292929;
+}
+
 #prodPage .filterMenu{
   height: 70vh;
   width: 25%;

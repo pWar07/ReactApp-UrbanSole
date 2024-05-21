@@ -43,7 +43,7 @@ body {
   justify-content: flex-start;
 }
 
-#main1 .back-icon {
+#main1 .back-icon,.cart-icon {
   height: 6vh;
   width: 6vh;
   border-radius: 50%;

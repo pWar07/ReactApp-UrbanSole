@@ -14,6 +14,15 @@ import Nike from "./extra/nike";
 import SwiperProd from "./products/swiperProdPage";
 import ContactUs from "./Pages/contactUs";
 import Release from "./Pages/release";
+import Cart from "./Pages/cart";
+import SNike from "./extra/searchNike";
+import SAdidas from "./extra/searchAdidas";
+import SWoodland from "./extra/searchWoodland";
+import SPuma from "./extra/searchPuma";
+import SSneaker from "./extra/searchSneaker";
+import SFormal from "./extra/searchFormal";
+import SBoot from "./extra/searchBoot";
+import SCanvas from "./extra/searchCanvas";
 
 const router = createBrowserRouter([
   {
@@ -38,11 +47,15 @@ const router = createBrowserRouter([
   },
   {
     path: "/contact",
-    element: <ContactUs/>,
+    element: <ContactUs />,
   },
   {
     path: "/release",
-    element: <Release/>,
+    element: <Release />,
+  },
+  {
+    path: "/cart",
+    element: <Cart />,
   },
   {
     path: "/join-us",
@@ -60,6 +73,39 @@ const router = createBrowserRouter([
   {
     path: "/nike",
     element: <Nike />,
+  },
+  {
+    path: "/product/nike",
+    element: <SNike />,
+  },
+  {
+    path: "/product/adidas",
+    element: <SAdidas />,
+  },
+  {
+    path: "/product/woodland",
+    element: <SWoodland />,
+  },
+  {
+    path: "/product/puma",
+    element: <SPuma />,
+  },
+
+  {
+    path: "/product/sneaker",
+    element: <SSneaker />,
+  },
+  {
+    path: "/product/formal",
+    element: <SFormal />,
+  },
+  {
+    path: "/product/boot",
+    element: <SBoot />,
+  },
+  {
+    path: "/product/canvas",
+    element: <SCanvas />,
   },
 ]);
 

@@ -13,6 +13,16 @@
   font-family: "Anek Latin", sans-serif;
 }
 
+#footer .footLink{
+  text-decoration: none;
+  color: #292929;
+}
+
+#footer .footIcon{
+  text-decoration: none;
+  color: #292929;
+}
+
 #footer .upper {
   height: 70%;
   width: 100%;
