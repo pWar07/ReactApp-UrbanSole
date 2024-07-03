@@ -145,7 +145,7 @@ const SingleProd = () => {
                 <img
                   src={product.img4}
                   onMouseEnter={() => setMainImg(product.img4)}
-                  alt=""
+                  alt=""  
                 />
               </div>
             </div>

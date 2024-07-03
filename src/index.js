@@ -90,7 +90,6 @@ const router = createBrowserRouter([
     path: "/product/puma",
     element: <SPuma />,
   },
-
   {
     path: "/product/sneaker",
     element: <SSneaker />,
